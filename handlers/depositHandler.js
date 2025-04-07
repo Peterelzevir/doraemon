@@ -37,7 +37,7 @@ const handleDeposit = async (ctx) => {
         
         if (!user) {
             return ctx.reply(
-                '⚠️ Anda belum terdaftar. Silakan gunakan /start terlebih dahulu.',
+                '⚠️ Anda belum terdaftar, sila gunakan /start terlebih dahulu',
                 { parse_mode: 'Markdown' }
             );
         }
@@ -54,7 +54,7 @@ const handleDeposit = async (ctx) => {
             '*Format Deposit:*\n' +
             '```/deposit <jumlah>```\n\n' +
             '*Contoh:*\n' +
-            '```/deposit 50000```',
+            '```/deposit 5```',
             { 
                 parse_mode: 'Markdown',
                 ...Markup.inlineKeyboard([[
@@ -70,7 +70,7 @@ const handleDeposit = async (ctx) => {
             '╔═══════════════════╗\n' +
             '║    ⚠️ *GAGAL*    ║\n' +
             '╚═══════════════════╝\n\n' +
-            `*Minimum Deposit: Rp ${config.minimumDeposit.toLocaleString()}*\n\n` +
+            `*Minimum Deposit: Rp ${config.minimumDeposit.toLocaleString()}* RM\n\n` +
             '*Format yang benar:*\n' +
             '```/deposit <jumlah>```\n\n' +
             '*Contoh:*\n' +
@@ -83,9 +83,9 @@ const handleDeposit = async (ctx) => {
         '╔═══════════════════╗\n' +
         '║    💎 *TOPUP SALDO*   ║\n' +
         '╚═══════════════════╝\n\n' +
-        `*Jumlah Deposit:* Rp ${parseInt(amount).toLocaleString()}\n\n` +
+        `*Jumlah Deposit:* Rp ${parseInt(amount).toLocaleString()} RM\n\n` +
         '👉 *Silahkan Transfer Ke Qris Kami*\n👀 *Jika sudah silahkan klik tombol Done dibawah* 💡\n\n' +
-        `*👨‍💻 Admin:* @hiyaok`;
+        `*👨‍💻 Admin:* @DORAEMONBOOSTEROWNER`;
 
     // First send the QRIS image with caption
     await ctx.replyWithPhoto(
@@ -99,7 +99,7 @@ const handleDeposit = async (ctx) => {
         {
             parse_mode: 'Markdown',
             ...Markup.inlineKeyboard([[
-                Markup.button.url('✅ Done Payment', `https://t.me/hiyaok?text=halo%20kakak%20aku%20sudah%20membayar%20sebesar%20${parseInt(amount).toLocaleString()}%20mohon%20konfirmasinya%20ya`)
+                Markup.button.url('✅ Done Payment', `https://t.me/DORAEMONBOOSTEROWNER?text=halo%20kakak%20aku%20sudah%20membayar%20sebesar%20${parseInt(amount).toLocaleString()}%20mohon%20konfirmasinya%20ya`)
             ]])
         }
     );
