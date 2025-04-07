@@ -70,7 +70,7 @@ const handleDeposit = async (ctx) => {
             '╔═══════════════════╗\n' +
             '║    ⚠️ *GAGAL*    ║\n' +
             '╚═══════════════════╝\n\n' +
-            `*Minimum Deposit: Rp ${config.minimumDeposit.toLocaleString()}* RM\n\n` +
+            `*Minimum Deposit: RM${config.minimumDeposit.toLocaleString()}*\n\n` +
             '*Format yang benar:*\n' +
             '```/deposit <jumlah>```\n\n' +
             '*Contoh:*\n' +
@@ -83,7 +83,7 @@ const handleDeposit = async (ctx) => {
         '╔═══════════════════╗\n' +
         '║    💎 *TOPUP SALDO*   ║\n' +
         '╚═══════════════════╝\n\n' +
-        `*Jumlah Deposit:* Rp ${parseInt(amount).toLocaleString()} RM\n\n` +
+        `*Jumlah Deposit:* Rm ${parseInt(amount).toLocaleString()}\n\n` +
         '👉 *Silahkan Transfer Ke Qris Kami*\n👀 *Jika sudah silahkan klik tombol Done dibawah* 💡\n\n' +
         `*👨‍💻 Admin:* @DORAEMONBOOSTEROWNER`;
 
