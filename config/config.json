@@ -7,7 +7,7 @@
   "apiKey": "w3smgb-7y3rqb-dujkfh-bq3y2f-ywnpyb",
   "margin": 50,
   "bannedUsers": [],
-  "minimumDeposit": 1000,
+  "minimumDeposit": 5,
   "csUsername": "DORAEMONBOOSTEROWNER",
   "groupId": "@DORAEMONBOOSTER",
   "orderStates": {
