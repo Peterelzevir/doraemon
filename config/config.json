@@ -1,6 +1,6 @@
 {
   "botToken": "7773043017:AAHjCwJNfosSlNw1LEhPZlfI4IiAeEjSjKQ",
-  "adminIds": ["7683714599"],
+  "adminIds": ["5988451717"],
   "welcomeImage": "./assets/bot.jpg",
   "botName": "Doraemon Booster",
   "apiId": 34874,
@@ -8,8 +8,8 @@
   "margin": 50,
   "bannedUsers": [],
   "minimumDeposit": 5,
-  "csUsername": "DORAEMONBOOSTEROWNER",
-  "groupId": "@DORAEMONBOOSTER",
+  "csUsername": "hiyaok",
+  "groupId": "@DORAEMO",
   "orderStates": {
     "pending": "Pending",
     "processing": "Processing",
